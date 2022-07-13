@@ -1,13 +1,9 @@
-import "../styles/globals.css";
-import { ThemeProvider, CSSReset } from "@chakra-ui/core";
+import React from 'react'
+import '../styles/globals.css'
+import '../styles/Home.module.css'
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <ThemeProvider>
-      <CSSReset />
-      <Component {...pageProps} />
-    </ThemeProvider>
-  );
+  return <Component {...pageProps} />
 }
 
-export default MyApp;
+export default MyApp
